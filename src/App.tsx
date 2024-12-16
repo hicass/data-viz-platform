@@ -22,12 +22,12 @@ const App: React.FC = () => {
     <>
       {user ? (
         <>
-          <p>Hello, {user.displayName}</p>{' '}
+          <p className='text-blue-500'>Hello, {user.displayName}</p>{' '}
           <button onClick={signOutUser}>Sign Out</button>
         </>
       ) : (
         <>
-          <h1>Hello World!</h1>
+          <h1 className='text-blue-500'>Hello World!</h1>
           <button onClick={signInWithGoogle}>Sign In With Google</button>
         </>
       )}
