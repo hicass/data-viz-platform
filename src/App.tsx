@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { onAuthStateChanged, User } from 'firebase/auth';
 import { signInWithGoogle, signOutUser } from './utils/authUtils';
 import { auth } from './firebase/firebaseConfig';
-import './App.css';
+import Dashboard from './components/Dashboard';
 
 const App: React.FC = () => {
   const [user, setUser] = useState<User | null>(null);
@@ -19,11 +19,10 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <>
+    <div className='bg-black h-screen w-full text-white'>
       {user ? (
         <>
-          <p className='text-blue-500'>Hello, {user.displayName}</p>{' '}
-          <button onClick={signOutUser}>Sign Out</button>
+          <Dashboard />
         </>
       ) : (
         <>
@@ -31,7 +30,7 @@ const App: React.FC = () => {
           <button onClick={signInWithGoogle}>Sign In With Google</button>
         </>
       )}
-    </>
+    </div>
   );
 };
 
