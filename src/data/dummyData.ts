@@ -57,3 +57,14 @@ export const performanceData = [
     value: '7.03%',
   },
 ];
+
+export const scenarioResultData = [
+  {
+    result:
+      'The best found configuration based on profit is characterized by 11 zones (max) with charging stations and 48 total number of poles.',
+  },
+  {
+    result:
+      'The best found configuration based on satisfied demand is characterized by 11 zones (max) with charging stations and 48 total number of poles.',
+  },
+];
