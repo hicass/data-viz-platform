@@ -6,7 +6,7 @@ import GraphSection from './GraphSection/GraphSection';
 
 const Dashboard: FC = () => {
   return (
-    <div className="flex gap-4">
+    <div className="flex flex-col xl:flex-row gap-4">
       <GraphSection graphData={graphData} />
       <PerformanceCardSection performanceCards={performanceData} />
     </div>
