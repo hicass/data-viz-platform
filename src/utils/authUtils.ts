@@ -18,10 +18,12 @@ export const signInWithGoogle = async (): Promise<void> => {
 };
 
 // handleSignOut signs the user out of the app
-export const signOutUser = async (): Promise<void> => {
+export const signOutUser = async (navigate: Function): Promise<void> => {
   try {
     await signOut(auth);
+    navigate('/'); // Redirect to homepage
     console.log('User Signed Out');
+    
   } catch (error: unknown) {
     // Handle errors that might come up during the sign-out process
     if (error instanceof Error) {

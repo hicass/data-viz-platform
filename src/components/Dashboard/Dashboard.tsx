@@ -12,7 +12,7 @@ import Button from '../ui/Button';
 // Component to render the Dashboard view
 const Dashboard: FC = () => {
   return (
-    <section className="h-full flex flex-col gap-10 bg-darkGrey p-8">
+    <main className="h-full flex flex-col gap-10 bg-darkGrey p-8">
       <div className="w-full flex items-center justify-between">
         <h1 className="text-3xl font-bold">Charging Station</h1>
         <Button
@@ -28,7 +28,7 @@ const Dashboard: FC = () => {
         <GraphSection graphData={graphData} />
         <PerformanceSection performanceCards={performanceData} />
       </div>
-    </section>
+    </main>
   );
 };
 
