@@ -1,8 +1,8 @@
 import { FC } from 'react';
-import Card, { CardType } from './Card';
+import PerformanceCard, { PerformanceCardType } from './PerformanceCard';
 
 interface PerformanceCardsProps {
-  performanceCards: CardType[];
+  performanceCards: PerformanceCardType[];
 }
 
 // Component to render Performance Card related elements
@@ -10,13 +10,13 @@ const PerformanceCardSection: FC<PerformanceCardsProps> = ({
   performanceCards,
 }) => {
   return (
-    <section>
+    <section className='max-h-full'>
       <h2 className="text-2xl font-semibold">Key Performance Indicators</h2>
 
-      <div className="h-full grid grid-cols-2 gap-6 mt-4">
+      <div className="h-full grid grid-cols-2 gap-6 mt-4 border">
         {/* Map through the performanceCards array and render a Card component for each item */}
         {performanceCards.map((card, idx) => (
-          <Card {...card} key={idx} />
+          <PerformanceCard {...card} key={idx} />
         ))}
       </div>
     </section>

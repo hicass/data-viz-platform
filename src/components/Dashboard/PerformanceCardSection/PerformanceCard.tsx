@@ -1,16 +1,16 @@
 import { FC } from 'react';
 
 // Define the type for the props that the Card component will accept
-export type CardType = {
+export type PerformanceCardType = {
   title: string;
   description: string;
   value: string;
 };
 
 // Component to render a single performance card
-const Card: FC<CardType> = ({ title, description, value }) => {
+const PerformanceCard: FC<PerformanceCardType> = ({ title, description, value }) => {
   return (
-    <article className="flex flex-col justify-between items-end bg-grey border-lightGrey border-[1px] rounded p-8">
+    <article className="flex flex-col justify-between items-end bg-grey border-lightGrey border-[1px] rounded p-4 h-full">
       {/* Top section containing the title and description */}
       <div>
         <h4 className="text-xl">{title}</h4>
@@ -23,4 +23,4 @@ const Card: FC<CardType> = ({ title, description, value }) => {
   );
 };
 
-export default Card;
+export default PerformanceCard;
