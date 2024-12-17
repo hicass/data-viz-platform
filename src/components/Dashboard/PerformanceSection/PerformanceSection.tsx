@@ -2,12 +2,12 @@ import { FC } from 'react';
 import PerformanceCard, { PerformanceCardType } from './PerformanceCard';
 import Button from '../../ui/Button';
 
-interface PerformanceCardsProps {
+interface PerformanceSectionProps {
   performanceCards: PerformanceCardType[];
 }
 
 // Component to render Performance Card related elements
-const PerformanceCardSection: FC<PerformanceCardsProps> = ({
+const PerformanceSection: FC<PerformanceSectionProps> = ({
   performanceCards,
 }) => {
   return (
@@ -31,4 +31,4 @@ const PerformanceCardSection: FC<PerformanceCardsProps> = ({
   );
 };
 
-export default PerformanceCardSection;
+export default PerformanceSection;

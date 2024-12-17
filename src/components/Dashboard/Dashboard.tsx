@@ -4,7 +4,7 @@ import {
   graphData,
   scenarioResultData,
 } from '../../data/dummyData';
-import PerformanceCardSection from './PerformanceCardSection/PerformanceCardSection';
+import PerformanceSection from './PerformanceSection/PerformanceSection';
 import GraphSection from './GraphSection/GraphSection';
 import ScenarioResultsSection from './ScenarioResultsSection/ScenarioResultsSection';
 import Button from '../ui/Button';
@@ -26,7 +26,7 @@ const Dashboard: FC = () => {
 
       <div className="flex flex-col lg:flex-row gap-6 h-full">
         <GraphSection graphData={graphData} />
-        <PerformanceCardSection performanceCards={performanceData} />
+        <PerformanceSection performanceCards={performanceData} />
       </div>
     </section>
   );
