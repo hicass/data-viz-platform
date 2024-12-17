@@ -13,7 +13,7 @@ const Button: FC<ButtonProps> = ({ text, onClick, style, variant }) => {
     return (
       <button onClick={onClick}>
         {/* This is an "X" icon for exit buttons */}
-        <img src="./assets/x-icon.svg" />
+        <img src="./assets/x-icon.svg" className="opacity-70 hover:opacity-100"/>
       </button>
     );
   }
