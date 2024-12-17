@@ -51,7 +51,7 @@ const graphTheme = {
 const Graph: FC<GraphProps> = ({ graphData }) => {
   console.log(graphData);
   return (
-    <div className="bg-[#222323] border-lightGrey border-[1px] rounded h-full w-full">
+    <div className="bg-[#222323] border-lightGrey border-[1px] rounded h-[420px] w-full xl:max-w-5xl">
       <ResponsiveLine
         data={graphData}
         theme={graphTheme}
