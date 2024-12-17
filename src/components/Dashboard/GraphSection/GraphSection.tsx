@@ -1,12 +1,14 @@
 import { FC } from 'react';
-import Graph from './Graph';
+import Graph, { GraphProps } from './Graph';
 
-const GraphSection: FC = () => {
+// GraphSection renders the graph related elements
+const GraphSection: FC<GraphProps> = ({ graphData }) => {
   return (
-    <div className='h-[500px] w-4/5'>
-      <h2 className='text-2xl font-semibold mb-4'>Graphs</h2>
+    <div className="h-[500px] w-4/5">
+      <h2 className="text-2xl font-semibold mb-4">Graphs</h2>
 
-      <Graph />
+      {/* Graph component receives the graphData as a prop to render the chart */}
+      <Graph graphData={graphData} />
     </div>
   );
 };

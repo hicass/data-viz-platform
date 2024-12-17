@@ -1,7 +1,25 @@
 import { FC } from 'react';
 import { ResponsiveLine } from '@nivo/line';
-import { graphData } from '../../../data/dummyData';
 
+// Type for individual data points
+type DataPoint = {
+  x: string;
+  y: number;
+};
+
+// Type for a graph series
+export type GraphSeries = {
+  id: string;
+  color: string;
+  data: DataPoint[];
+};
+
+// Prop for the entire dataset passed to the graph
+export interface GraphProps {
+  graphData: GraphSeries[];
+}
+
+// Theme object to help set graph style
 const graphTheme = {
   grid: {
     line: {
@@ -29,9 +47,11 @@ const graphTheme = {
   },
 };
 
-const Graph: FC = () => {
+// Component to render the graph
+const Graph: FC<GraphProps> = ({ graphData }) => {
+  console.log(graphData);
   return (
-    <div className="bg-[#222323] border-lightGrey border-[1px] rounded">
+    <div className="bg-[#222323] border-lightGrey border-[1px] rounded h-full w-full">
       <ResponsiveLine
         data={graphData}
         theme={graphTheme}
