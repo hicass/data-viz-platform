@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { onAuthStateChanged, User } from 'firebase/auth';
 import { signInWithGoogle, signOutUser } from './utils/authUtils';
 import { auth } from './firebase/firebaseConfig';
-import Dashboard from './components/Dashboard';
+import Dashboard from './components/Dashboard/Dashboard';
 
 const App: React.FC = () => {
   const [user, setUser] = useState<User | null>(null);
