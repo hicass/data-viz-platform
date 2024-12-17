@@ -21,9 +21,7 @@ const App: React.FC = () => {
   return (
     <div className='bg-black h-screen w-full text-white'>
       {user ? (
-        <>
           <Dashboard />
-        </>
       ) : (
         <>
           <h1 className='text-blue-500'>Hello World!</h1>

@@ -10,7 +10,7 @@ export type PerformanceCardType = {
 // Component to render a single performance card
 const PerformanceCard: FC<PerformanceCardType> = ({ title, description, value }) => {
   return (
-    <article className="flex flex-col justify-between items-end bg-grey border-lightGrey border-[1px] rounded p-4 h-full">
+    <article className="flex flex-col justify-between items-end bg-grey border-lightGrey border-[1px] rounded p-4">
       {/* Top section containing the title and description */}
       <div>
         <h4 className="text-xl">{title}</h4>

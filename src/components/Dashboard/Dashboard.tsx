@@ -6,11 +6,11 @@ import ScenarioResultsSection from './ScenarioResultsSection/ScenarioResultsSect
 
 const Dashboard: FC = () => {
   return (
-    <section className="flex flex-col gap-10 bg-darkGrey p-8">
+    <section className="h-full flex flex-col gap-10 bg-darkGrey p-8">
       <h1 className="text-3xl font-bold">Charging Station</h1>
       <ScenarioResultsSection scenarioResultCards={scenarioResultData} />
 
-      <div className="flex flex-col xl:flex-row gap-6 h-full">
+      <div className="flex flex-col lg:flex-row gap-6 h-full">
         <GraphSection graphData={graphData} />
         <PerformanceCardSection performanceCards={performanceData} />
       </div>
