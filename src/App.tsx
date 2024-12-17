@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { onAuthStateChanged, User } from 'firebase/auth';
-import { signInWithGoogle, signOutUser } from './utils/authUtils';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { auth } from './firebase/firebaseConfig';
 import Dashboard from './components/Dashboard/Dashboard';
+import Nav from './components/Nav/Nav';
+import UserProfile from './components/UserProfile/UserProfile';
+import Auth from './components/Auth/Auth';
 
 const App: React.FC = () => {
   const [user, setUser] = useState<User | null>(null);
@@ -19,16 +22,15 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className='bg-black h-screen w-full text-white'>
-      {user ? (
-          <Dashboard />
-      ) : (
-        <>
-          <h1 className='text-blue-500'>Hello World!</h1>
-          <button onClick={signInWithGoogle}>Sign In With Google</button>
-        </>
-      )}
-    </div>
+    <Router>
+      <div className="bg-black h-screen w-full flex text-white">
+        <Nav user={user} />
+        <Routes>
+          <Route path="/" element={user ? <Dashboard /> : <Auth />} />
+          <Route path="/profile" element={<UserProfile user={user} />} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 
