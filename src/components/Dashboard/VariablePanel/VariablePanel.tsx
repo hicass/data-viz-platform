@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import { motion, Variants } from 'motion/react';
 import Button from '../../ui/Button';
+import VariableSearch from './VariableSearch';
 
 const slideIn: Variants = {
   offscreen: {
@@ -21,6 +22,7 @@ interface VariablePanelProps {
   setPanelOpen: (isOpen: boolean) => void;
 }
 
+// Component to render the slide out Variable Panel
 const VariablePanel: FC<VariablePanelProps> = ({ setPanelOpen }) => {
   return (
     <motion.aside
@@ -33,6 +35,8 @@ const VariablePanel: FC<VariablePanelProps> = ({ setPanelOpen }) => {
         <h2 className="text-2xl">Edit Variables</h2>
         <Button variant="exit" onClick={() => setPanelOpen(false)} />
       </div>
+
+      <VariableSearch />
     </motion.aside>
   );
 };
