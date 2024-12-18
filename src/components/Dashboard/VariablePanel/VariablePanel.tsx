@@ -29,7 +29,7 @@ const VariablePanel: FC<VariablePanelProps> = ({ setPanelOpen }) => {
       variants={slideIn}
       initial="offscreen"
       whileInView="onscreen"
-      className="absolute top-0 right-0 z-20 bg-darkGrey w-1/2 h-full border-lightGrey border-[1px] p-8"
+      className="absolute top-0 right-0 z-20 bg-[#0E0D0D] w-1/2 h-full border-lightGrey border-[1px] p-8"
     >
       <div className="w-full flex items-center justify-between">
         <h2 className="text-2xl">Edit Variables</h2>
