@@ -11,7 +11,7 @@ const PerformanceSection: FC<PerformanceSectionProps> = ({
   performanceCards,
 }) => {
   return (
-    <section className="flex flex-col h-full w-full lg:min-w-40 lg:w-2/5">
+    <section className="flex flex-col w-full xl:w-2/5">
       <div className="w-full flex items-center justify-between">
         <h2 className="text-2xl font-semibold">Key Performance Indicators</h2>
         <Button
@@ -21,7 +21,7 @@ const PerformanceSection: FC<PerformanceSectionProps> = ({
         />
       </div>
 
-      <div className="h-full grid grid-cols-2 gap-6 mt-4">
+      <div className="w-full grid grid-cols-2 gap-6 mt-4">
         {/* Map through the performanceCards array and render a Card component for each item */}
         {performanceCards.map((card, idx) => (
           <PerformanceCard {...card} key={idx} />

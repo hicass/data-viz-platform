@@ -18,10 +18,10 @@ const Dashboard: FC = () => {
   const [panelOpen, setPanelOpen] = useState(false);
 
   return (
-    <main>
+    <main className='flex flex-col h-full w-full'>
       <ViewController />
 
-      <div className="relative h-full flex flex-col gap-10 bg-darkGrey p-8 border-lightGrey border-[1px] rounded">
+      <div className="relative h-full w-full flex flex-col gap-10 bg-darkGrey p-8 border-lightGrey border-[1px] rounded overflow-scroll">
         <div className="w-full flex items-center justify-between">
           <h1 className="text-3xl font-bold">Charging Station</h1>
           <Button
@@ -33,7 +33,7 @@ const Dashboard: FC = () => {
 
         <ScenarioResultsSection scenarioResultCards={scenarioResultData} />
 
-        <div className="flex flex-col lg:flex-row gap-6 h-full">
+        <div className="w-full flex flex-col lg:flex-row gap-10 lg:gap-6">
           <GraphSection graphData={graphData} />
           <PerformanceSection performanceCards={performanceData} />
         </div>

@@ -49,9 +49,8 @@ const graphTheme = {
 
 // Component to render the graph
 const Graph: FC<GraphProps> = ({ graphData }) => {
-  console.log(graphData);
   return (
-    <div className="bg-[#222323] border-lightGrey border-[1px] rounded h-[420px] w-full xl:max-w-5xl">
+    <div className="h-[400px] w-full">
       <ResponsiveLine
         data={graphData}
         theme={graphTheme}
@@ -66,8 +65,6 @@ const Graph: FC<GraphProps> = ({ graphData }) => {
           type: 'linear',
           min: 20,
           max: 110,
-          stacked: true,
-          reverse: false,
         }}
         axisTop={null}
         axisRight={null}
@@ -87,7 +84,7 @@ const Graph: FC<GraphProps> = ({ graphData }) => {
         }}
         enablePoints={false}
         pointLabelYOffset={-17}
-        enableTouchCrosshair={true}
+        // enableTouchCrosshair={true}
         useMesh={true}
       />
     </div>
