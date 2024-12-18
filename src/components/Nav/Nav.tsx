@@ -19,9 +19,9 @@ const navLinks: NavLinkType[] = [
 // Component for rending the Nav elements
 const Nav: FC<NavProps> = ({ user }) => {
   return (
-    <nav className="w-16 p-4 pb-6">
-      <ul className="h-full flex flex-col justify-between">
-        <div className="flex flex-col gap-6 mt-2">
+    <nav className="w-full lg:w-16 p-4 pb-6">
+      <ul className="h-full flex flex-row lg:flex-col justify-between">
+        <div className="flex flex-row lg:flex-col gap-6 mt-2">
           {/* Iterate over navLinks array and render NavLink components */}
           {navLinks.map((link, idx) => (
             <NavLink href={link.href} iconPath={link.iconPath} key={idx} />
