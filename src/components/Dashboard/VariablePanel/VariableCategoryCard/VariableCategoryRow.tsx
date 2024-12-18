@@ -2,7 +2,7 @@ import { FC } from 'react';
 import VariableSelector, { VariableType } from './VariableSelector';
 
 // Type for the variable category
-type VariableCategory = {
+export type VariableCategory = {
   categoryTitle: string;
   variables: VariableType[];
 };
