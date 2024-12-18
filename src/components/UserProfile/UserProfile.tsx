@@ -17,7 +17,7 @@ const UserProfile: FC<UserProfileProps> = ({ user }) => {
   };
 
   return (
-    <main className="bg-darkGrey w-full flex items-center justify-center">
+    <main className="bg-darkGrey h-screen w-full flex items-center justify-center">
       {user ? (
         // Render user profile details if the user is logged in
         <div className="flex flex-col items-center">
