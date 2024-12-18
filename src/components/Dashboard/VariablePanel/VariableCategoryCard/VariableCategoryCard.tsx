@@ -1,11 +1,10 @@
 import { FC, useState } from 'react';
-import VariableCategoryRow, {
-  VariableCategoryProps,
-} from './VariableCategoryRow';
+import VariableCategoryRow, { VariableCategory } from './VariableCategoryRow';
 import VariableContextWindow from './VariableContextWindow';
 
+// Props for the variable category card
 interface VariableCategoryCardProps {
-  variableCategoryData: VariableCategoryProps[];
+  variableCategoryData: VariableCategory[];
 }
 
 // Component to render a card that displays all Categories and their Variables
