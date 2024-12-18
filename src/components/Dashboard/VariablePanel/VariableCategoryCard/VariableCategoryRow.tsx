@@ -14,7 +14,7 @@ export interface VariableCategoryProps extends VariableCategory {
     title: string,
     description: string,
     id: number
-  ) => () => void; // Function to handle mouse enter event for showing variable context window
+  ) => void; // Function to handle mouse enter event for showing variable context window
   handleVariableMouseLeave: () => void; // Function to handle mouse leave event for hiding variable context window
 }
 

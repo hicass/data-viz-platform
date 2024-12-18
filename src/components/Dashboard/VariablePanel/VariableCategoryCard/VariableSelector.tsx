@@ -14,7 +14,7 @@ interface VariableSelectorProps extends VariableType {
     title: string,
     description: string,
     id: number
-  ) => () => void; // Mouse enter event handler
+  ) => void; // Mouse enter event handler
   handleVariableMouseLeave: () => void; // Mouse leave event handler
 }
 

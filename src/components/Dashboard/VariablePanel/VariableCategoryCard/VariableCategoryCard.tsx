@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC, useState, useRef } from 'react';
 import VariableCategoryRow, { VariableCategory } from './VariableCategoryRow';
 import VariableContextWindow from './VariableContextWindow';
 
@@ -20,6 +20,9 @@ const VariableCategoryCard: FC<VariableCategoryCardProps> = ({
     description: string;
   } | null>(null);
 
+  // Variable hover timeout reference
+  const hoverTimeout = useRef<NodeJS.Timeout | null>(null);
+
   // Function to handle the selection/deselection of a variable
   const handleVariableSelect = ({ variableId }: { variableId: number }) => {
     setActiveVariables(
@@ -30,23 +33,30 @@ const VariableCategoryCard: FC<VariableCategoryCardProps> = ({
     );
   };
 
-  // Function to handle mouse enter event on a variable (show context window)
+  // Function to handle variable mouse enter event (show context window)
   const handleVariableMouseEnter = (
     title: string,
     description: string,
     id: number
   ) => {
-    // Set the hovered variable info after 1.5 seconds
-    const timeout = setTimeout(() => {
+    // Only set the timeout if it's not already
+    if (hoverTimeout.current) {
+      clearTimeout(hoverTimeout.current);
+    }
+
+    // Set the context window variable info after 1.5 seconds, and open it
+    hoverTimeout.current = setTimeout(() => {
       setContextWindowVariable({ title, description, id });
     }, 1500);
-
-    // Clear the timeout if the user moves the mouse before the timeout
-    return () => clearTimeout(timeout);
   };
 
-  // Function to handle mouse leave event from a variable (hide context window)
+  // Function to handle variable mouse leave event (hide context window)
   const handleVariableMouseLeave = () => {
+    // Clear the timeout if the mouse leaves early
+    if (hoverTimeout.current) {
+      clearTimeout(hoverTimeout.current);
+    }
+
     setContextWindowVariable(null); // Reset hovered variable when mouse leaves
   };
 
@@ -66,7 +76,7 @@ const VariableCategoryCard: FC<VariableCategoryCardProps> = ({
         ))}
       </div>
 
-      {/* If there is a contextWindowVariable, render the context window */}
+      {/* If there is a contextWindowVariable render the context window */}
       {contextWindowVariable && (
         <VariableContextWindow {...contextWindowVariable} />
       )}
