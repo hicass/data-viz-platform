@@ -1,5 +1,7 @@
-import { FC } from 'react';
-import VariableCategoryRow, { VariableCategoryType } from './VariableCategoryRow';
+import { FC, useState } from 'react';
+import VariableCategoryRow, {
+  VariableCategoryType,
+} from './VariableCategoryRow';
 
 interface VariableCategoryCardProps {
   variableCategoryData: VariableCategoryType[];
@@ -9,10 +11,26 @@ interface VariableCategoryCardProps {
 const VariableCategoryCard: FC<VariableCategoryCardProps> = ({
   variableCategoryData,
 }) => {
+  const [activeVariables, setActiveVariables] = useState<number[]>([]);
+
+  const handleVariableSelect = ({ variableId }: { variableId: number }) => {
+    setActiveVariables(
+      (prev) =>
+        prev.includes(variableId)
+          ? prev.filter((id) => id !== variableId) // Remove if already active
+          : [...prev, variableId] // Add if not active
+    );
+  };
+
   return (
-    <article className='flex flex-col gap-6 mt-6 border-lightGrey border-[1px] bg-[#161618] rounded p-6'>
+    <article className="flex flex-col gap-6 mt-6 border-lightGrey border-[1px] bg-[#161618] rounded p-6">
       {variableCategoryData.map((category, idx) => (
-        <VariableCategoryRow {...category} key={idx} />
+        <VariableCategoryRow
+          {...category}
+          key={idx}
+          activeVariables={activeVariables}
+          onVariableSelect={handleVariableSelect}
+        />
       ))}
     </article>
   );
