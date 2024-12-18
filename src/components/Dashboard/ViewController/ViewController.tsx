@@ -10,7 +10,7 @@ const dashboardViews = [
 
 const ViewController: FC = () => {
   return (
-    <section className="flex p-4 justify-between text-sm">
+    <section className="flex flex-col sm:flex-row p-4 justify-between gap-6 text-sm">
       <DashboardControlButtons dashboardViews={dashboardViews} />
 
       <div>

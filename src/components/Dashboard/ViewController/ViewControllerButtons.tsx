@@ -14,7 +14,7 @@ const ViewControllerButtons: FC<DashboardControlButtonsProps> = ({
   dashboardViews,
 }) => {
   return (
-    <ul className="flex gap-4">
+    <ul className="flex flex-row gap-4">
       {dashboardViews.map((view, idx) => (
         <li key={idx}>
           <Button
