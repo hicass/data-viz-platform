@@ -9,7 +9,7 @@ import { VariableCategory } from './VariableCategoryCard/VariableCategoryRow';
 const slideIn: Variants = {
   // Offscreen state when the element is hidden
   offscreen: {
-    x: 500, // Start the panel off-screen to the right (500px from its final position)
+    x: 200, // Start the panel off-screen to the right (500px from its final position)
   },
 
   // Onscreen state when the element is visible and sliding into place
