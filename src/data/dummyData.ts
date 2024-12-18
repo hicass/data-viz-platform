@@ -68,3 +68,76 @@ export const scenarioResultData = [
       'The best found configuration based on satisfied demand is characterized by 11 zones (max) with charging stations and 48 total number of poles.',
   },
 ];
+
+export const variableCategoryData = [
+  {
+    categoryTitle: 'Variable Category 1',
+    variables: [
+      {
+        title: 'Variable',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+      },
+      {
+        title: 'Variable',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+      },
+      {
+        title: 'Variable',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+      },
+    ],
+  },
+  {
+    categoryTitle: 'Variable Category 2',
+    variables: [
+      {
+        title: 'Variable',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+      },
+      {
+        title: 'Variable',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+      },
+      {
+        title: 'Variable',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+      },
+    ],
+  },
+  {
+    categoryTitle: 'Variable Category 3',
+    variables: [
+      {
+        title: 'Variable',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+      },
+      {
+        title: 'Variable',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+      },
+      {
+        title: 'Variable',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+      },
+      {
+        title: 'Variable',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+      },
+      {
+        title: 'Variable',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+      },
+    ],
+  },
+];
