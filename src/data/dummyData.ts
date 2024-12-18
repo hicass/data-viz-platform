@@ -71,89 +71,89 @@ export const scenarioResultData = [
 
 export const variableCategoryData = [
   {
-    categoryTitle: 'Variable Category 1',
+    categoryTitle: 'Environmental/Emissions',
     variables: [
       {
         id: 1,
-        title: 'Variable',
+        title: 'Carbon',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+          'The total amount of carbon dioxide (CO2) emitted by a fleet or operation, typically measured in tons or kilograms. It helps assess the environmental impact of transportation and other activities.',
       },
       {
         id: 2,
-        title: 'Variable',
+        title: 'Co2 Distribution',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+          'The method or model for allocating CO2 emissions across various sources, such as different vehicles or operational areas, in order to assess overall environmental impact.',
       },
       {
         id: 3,
-        title: 'Variable',
+        title: 'Emissions Factor',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+          'A value used to calculate the amount of CO2 produced per unit of energy consumed or distance traveled. This helps estimate emissions based on specific activity.',
       },
     ],
   },
   {
-    categoryTitle: 'Variable Category 2',
+    categoryTitle: 'Operations/Logistics',
     variables: [
       {
         id: 4,
-        title: 'Variable',
+        title: 'Fleet Sizing',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+          'The process of determining the optimal number and type of vehicles needed for a fleet based on factors such as demand, distance, and efficiency.',
       },
       {
         id: 5,
-        title: 'Variable',
+        title: 'Request Rate',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+          'The frequency at which requests (e.g., service orders, transport bookings) are made, which affects how resources like vehicles or staff are allocated.',
       },
       {
         id: 6,
-        title: 'Variable',
+        title: 'Operational Efficiency',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+          'The effectiveness of a fleet or operation in using resources (such as time, fuel, or staff) to achieve its goals with minimal waste.',
       },
       {
         id: 7,
-        title: 'Variable',
+        title: 'Load Factor',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+          'A measure of how efficiently a vehicle is being used, representing the ratio of actual cargo carried versus the maximum capacity.',
       },
       {
         id: 8,
-        title: 'Variable',
+        title: 'Vehicle Capacity',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+          'The maximum load or volume that a vehicle can carry, which affects how many goods can be transported at once and impacts fleet efficiency.',
       },
       {
         id: 9,
-        title: 'Variable',
+        title: 'Transit Time',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+          'The time taken for goods or passengers to travel from the origin to the destination, accounting for variables like stops, traffic, and route changes.',
       },
     ],
   },
   {
-    categoryTitle: 'Variable Category 3',
+    categoryTitle: 'Pricing/Costs',
     variables: [
       {
         id: 10,
-        title: 'Variable',
+        title: 'Parking Rate',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+          'The cost associated with parking a vehicle for a specified duration, often used in the context of logistics or fleet management in urban areas.',
       },
       {
         id: 11,
-        title: 'Variable',
+        title: 'Border Rate',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+          'The cost or fee associated with crossing a border, including tariffs, taxes, or customs fees that affect transportation or trade.',
       },
       {
         id: 12,
-        title: 'Variable',
+        title: 'Fuel Cost',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+          'The price of fuel (gasoline, diesel, or other energy sources) used by vehicles, which directly impacts operational expenses in logistics and transportation.',
       },
     ],
   },
