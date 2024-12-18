@@ -74,16 +74,19 @@ export const variableCategoryData = [
     categoryTitle: 'Variable Category 1',
     variables: [
       {
+        id: 1,
         title: 'Variable',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
       },
       {
+        id: 2,
         title: 'Variable',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
       },
       {
+        id: 3,
         title: 'Variable',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
@@ -94,16 +97,37 @@ export const variableCategoryData = [
     categoryTitle: 'Variable Category 2',
     variables: [
       {
+        id: 4,
         title: 'Variable',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
       },
       {
+        id: 5,
         title: 'Variable',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
       },
       {
+        id: 6,
+        title: 'Variable',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+      },
+      {
+        id: 7,
+        title: 'Variable',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+      },
+      {
+        id: 8,
+        title: 'Variable',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
+      },
+      {
+        id: 9,
         title: 'Variable',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
@@ -114,26 +138,19 @@ export const variableCategoryData = [
     categoryTitle: 'Variable Category 3',
     variables: [
       {
+        id: 10,
         title: 'Variable',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
       },
       {
+        id: 11,
         title: 'Variable',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
       },
       {
-        title: 'Variable',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
-      },
-      {
-        title: 'Variable',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
-      },
-      {
+        id: 12,
         title: 'Variable',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula, sapien sit amet fermentum aliquet, arcu nulla bibendum justo, non sagittis magna erat ac elit.',
