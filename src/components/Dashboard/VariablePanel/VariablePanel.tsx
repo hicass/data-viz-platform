@@ -9,7 +9,7 @@ import { VariableCategory } from './VariableCategoryCard/VariableCategoryRow';
 const slideIn: Variants = {
   // Offscreen state when the element is hidden
   offscreen: {
-    x: 500, // Start the panel off-screen to the right (500px from its final position)
+    x: 200, // Start the panel off-screen to the right (500px from its final position)
   },
 
   // Onscreen state when the element is visible and sliding into place
@@ -37,7 +37,7 @@ const VariablePanel: FC<VariablePanelProps> = ({
       variants={slideIn}
       initial="offscreen"
       whileInView="onscreen"
-      className="absolute top-0 right-0 z-20 bg-[#0E0D0D] w-1/2 h-full border-lightGrey border-[1px] p-8"
+      className="absolute top-0 right-0 z-20 bg-[#0E0D0D] w-full lg:w-1/2 h-full border-lightGrey lg:border-[1px] p-8"
     >
       <div className="w-full flex items-center justify-between">
         <h2 className="text-2xl">Edit Variables</h2>

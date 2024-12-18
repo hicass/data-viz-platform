@@ -4,7 +4,9 @@ interface ButtonProps {
   text?: string; // The text content displayed inside the button
   style?: string; // Optional additional classes for custom styling
   onClick: () => void; // Function to handle button click events
-  variant?: 'text' | 'exit'; // Type of button: 'text' for a simple text button, 'exit' for an exit button
+  // Type of button: 'text' for a simple text button, 'exit' for an exit button,
+  // 'blank' for a button with no styling
+  variant?: 'text' | 'exit' | 'blank';
 }
 
 // Reusable Button component with consistent styling
@@ -16,6 +18,12 @@ const Button: FC<ButtonProps> = ({ text, onClick, style, variant }) => {
         <img src="./assets/x-icon.svg" />
       </button>
     );
+  }
+
+  if (variant === 'blank') {
+    <button onClick={onClick} className={style}>
+      {text}
+    </button>;
   }
 
   return (

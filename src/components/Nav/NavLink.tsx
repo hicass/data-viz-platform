@@ -1,11 +1,12 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
 
-type NavLinkType = {
+export type NavLinkType = {
   href: string; // href string for the link
-  iconPath: string; //
+  iconPath: string; // The path to the icon image displayed in the link
 };
 
+// Component to render a navigation link with an icon
 const NavLink: FC<NavLinkType> = ({ href, iconPath }) => {
   return (
     <Link to={href}>
