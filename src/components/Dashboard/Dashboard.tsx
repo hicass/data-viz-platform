@@ -3,6 +3,7 @@ import {
   performanceData,
   graphData,
   scenarioResultData,
+  variableCategoryData
 } from '../../data/dummyData';
 import PerformanceSection from './PerformanceSection/PerformanceSection';
 import GraphSection from './GraphSection/GraphSection';
@@ -39,7 +40,7 @@ const Dashboard: FC = () => {
       {panelOpen && (
         <>
           <ScreenBlur />
-          <VariablePanel setPanelOpen={setPanelOpen} />
+          <VariablePanel setPanelOpen={setPanelOpen} variableCategoryData={variableCategoryData} />
         </>
       )}
     </main>

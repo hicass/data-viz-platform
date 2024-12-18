@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { motion, Variants } from 'motion/react';
 import Button from '../../ui/Button';
 import VariableSearch from './VariableSearch';
+import VariableCategoryCard, { VariableCategoryType } from './VariableCategoryCard/VariableCategoryCard';
 
 const slideIn: Variants = {
   offscreen: {
@@ -20,10 +21,11 @@ const slideIn: Variants = {
 
 interface VariablePanelProps {
   setPanelOpen: (isOpen: boolean) => void;
+  variableCategoryData: VariableCategoryType[];
 }
 
 // Component to render the slide out Variable Panel
-const VariablePanel: FC<VariablePanelProps> = ({ setPanelOpen }) => {
+const VariablePanel: FC<VariablePanelProps> = ({ setPanelOpen, variableCategoryData }) => {
   return (
     <motion.aside
       variants={slideIn}
@@ -37,6 +39,7 @@ const VariablePanel: FC<VariablePanelProps> = ({ setPanelOpen }) => {
       </div>
 
       <VariableSearch />
+      <VariableCategoryCard variableCategoryData={variableCategoryData} />
     </motion.aside>
   );
 };
