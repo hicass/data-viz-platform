@@ -23,7 +23,7 @@ const App: React.FC = () => {
 
   return (
     <Router>
-      <div className="h-screen w-full flex text-white overflow-hidden">
+      <div className="lg:h-screen w-full flex flex-col lg:flex-row text-white overflow-hidden">
         <Nav user={user} />
         <Routes>
           <Route path="/" element={user ? <Dashboard /> : <Auth />} />
