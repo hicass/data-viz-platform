@@ -41,10 +41,12 @@ const VariablePanel: FC<VariablePanelProps> = ({
     >
       <div className="w-full flex items-center justify-between">
         <h2 className="text-2xl">Edit Variables</h2>
-        <Button variant="exit" onClick={() => setPanelOpen(false)} />{' '}
+        <Button variant="exit" onClick={() => setPanelOpen(false)} />
         {/* Button to close the panel */}
       </div>
-      <VariableSearch />{' '}
+
+      <VariableSearch />
+
       {/* Include the VariableSearch component to allow users to search for variables */}
       <VariableCategoryCard variableCategoryData={variableCategoryData} />
     </motion.aside>
