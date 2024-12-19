@@ -26,6 +26,8 @@ const App: React.FC = () => {
       <div className="lg:h-screen w-full flex flex-col lg:flex-row text-white overflow-hidden">
         <Nav user={user} />
         <Routes>
+          {/* If there is a user authenticated render the Dashboard page,
+           otherwise render the Auth page */}
           <Route path="/" element={user ? <Dashboard /> : <Auth />} />
           <Route path="/profile" element={<UserProfile user={user} />} />
         </Routes>
